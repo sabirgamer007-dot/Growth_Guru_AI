@@ -195,4 +195,4 @@ npm run dev
 
 ## 🤝 Team
 
-Developed with ❤️ for the Hackathon by **Team PixelForge**.
+Developed with ❤️ by **Team PixelForge**.
