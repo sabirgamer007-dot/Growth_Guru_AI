@@ -16,6 +16,7 @@ import {
   Target,
   MessageSquare,
   Hash,
+  Share2,
 } from 'lucide-react';
 import { generateGrowthPlan, validateBusinessAlignment } from '../services/api';
 import MismatchModal from '../components/MismatchModal';
@@ -275,6 +276,16 @@ export default function GrowthCoachScreen({ businessProfile, setBusinessProfile,
 
           {/* AI Scenario Simulator placed immediately after the Growth Plan summary */}
           <ScenarioSimulator fileId={fileId} scenarioData={scenarioData} setScenarioData={setScenarioData} />
+
+          {/* Social Studio Card */}
+          <div className="card p-md">
+            <div className="flex items-center gap-xs">
+              <div className="p-xs rounded-button bg-primary/10">
+                <Share2 className="w-5 h-5 text-primary" />
+              </div>
+              <h2 className="text-h2 text-text-main">Social Studio</h2>
+            </div>
+          </div>
 
           {/* Card 2: Product-Specific Captions */}
           <div className="card p-lg">
