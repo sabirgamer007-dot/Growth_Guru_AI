@@ -36,8 +36,10 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Documentation & Sample Data
-Docs/
-docs/
+# Ignored Documentation & Sample Data
+Growth GuruAI/Docs/
 Sample_Data/
 sample_data/
+
+# Allow docs/images for README screenshots
+!docs/images/

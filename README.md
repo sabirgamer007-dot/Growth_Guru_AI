@@ -113,7 +113,7 @@ Growth GuruAI/growthguru-ai/
 
 - **Python**: 3.10 or higher
 - **Node.js**: 18.0 or higher
-- **Groq API Key**: Available at (https://console.groq.com)
+- **Groq API Key**: Available at [console.groq.com](https://console.groq.com)
 
 ---
 
@@ -183,20 +183,16 @@ npm run dev
 
 ## 📸 Screenshots
 
-| Dashboard Overview | Growth Recommendations |
+| Dashboard Analytics | GrowthEngine™ Strategy |
 |---|---|
-| ![Dashboard](/path/to/placeholder_dashboard.png) | ![Growth Plan](/path/to/placeholder_growth_plan.png) |
+| ![Dashboard Analytics](docs/images/dashboard_analytics.png) | ![GrowthEngine Strategy](docs/images/growth_engine.png) |
 
-| Growth Lens Analytics | Scenario Simulator |
+| Hybrid CSV Validation | GrowthLens™ Impact Simulator |
 |---|---|
-| ![Growth Lens](/path/to/placeholder_growth_lens.png) | ![Scenario Simulator](/path/to/placeholder_simulator.png) |
-
-| CSV Data Validation | Social Studio Generator |
-|---|---|
-| ![Validation](/path/to/placeholder_validation.png) | ![Social Media Generator](/path/to/placeholder_social_media.png) |
+| ![CSV Validation](docs/images/csv_validation.png) | ![GrowthLens Impact Simulator](docs/images/growth_lens.png) |
 
 ---
 
 ## 🤝 Team
 
-Developed with ❤️ for by **Team PixelForge**.
+Developed with ❤️ for the Hackathon by **Team PixelForge**.
