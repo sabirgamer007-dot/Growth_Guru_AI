@@ -1,17 +1,25 @@
 # Dependencies
 node_modules/
+frontend/node_modules/
 .pnp
 .pnp.js
 
 # Testing & Coverage
 coverage/
+.pytest_cache/
 
 # Production & Build outputs
 dist/
+frontend/dist/
 build/
 *.egg-info/
 __pycache__/
 *.py[cod]
+
+# Virtual Environments
+venv/
+backend/venv/
+.venv/
 
 # Environment variables
 .env
@@ -19,6 +27,8 @@ __pycache__/
 .env.development.local
 .env.test.local
 .env.production.local
+backend/.env
+frontend/.env
 
 # Logs
 *.log
@@ -36,10 +46,10 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Ignored Documentation & Sample Data
-Growth GuruAI/Docs/
+# Sample Data & Temp Docs
 Sample_Data/
 sample_data/
+Docs/
 
 # Allow docs/images for README screenshots
 !docs/images/

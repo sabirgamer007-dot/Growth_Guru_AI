@@ -23,18 +23,17 @@ Small and medium-sized businesses often struggle to convert raw sales records in
 
 ### 📈 Business Dashboard
 
-- 📊 **Revenue Analytics** — Comprehensive tracking of revenue trends and key performance indicators.
-- 🛍️ **Product Performance** — Identification of top sellers, product sales velocity, and cross-selling targets.
+- 📊 **Revenue Analytics** — Comprehensive tracking of revenue metrics and key performance indicators.
+- 🛍️ **Product Performance** — Identification of top sellers, lowest sellers, and cross-selling targets.
 - 📦 **Inventory Insights** — Proactive risk detection for inventory management and stock health.
-- 📈 **Sales Overview** — Clear visualization of business volume and sales metrics over time.
+- 📈 **Sales Overview** — Clear visualization of business volume and sales metrics.
 
 ### ⚙️ AI Infrastructure
 
-- 🔄 **Smart Model Router** — Automatic Groq model routing and intelligent fallback.
-- 🛡️ **JSON Guard** — Structured JSON validation and response integrity.
-- 🔍 **AI Forensics** — Token diagnostics, request tracing and execution analytics.
-- 📡 **Token Monitor** — AI token usage monitoring.
-- ⚡ **Rate Limit Shield** — Intelligent HTTP 429 handling and recovery.
+- 🔄 **Smart Model Router** — Automatic Groq model routing and intelligent fallback (LLaMA 3.3 70B → LLaMA 3.1 8B).
+- 🛡️ **JSON Guard** — Structured JSON validation and automatic repair logic.
+- 🔍 **AI Diagnostics Logger** — Server-side token estimation & request diagnostics logging.
+- ⚡ **Rate Limit Shield** — Intelligent HTTP 429 handling and error recovery.
 
 ---
 
@@ -87,21 +86,24 @@ Small and medium-sized businesses often struggle to convert raw sales records in
 ## 📂 Project Structure
 
 ```text
-Growth GuruAI/growthguru-ai/
+.
 ├── backend/                  # FastAPI Backend Service
 │   ├── validation/           # Hybrid CSV & Schema Validation Engine
 │   ├── config.py             # Global configurations & LLM settings
-│   ├── groq_client.py        # Smart Model Router, JSON Guard & Diagnostics
+│   ├── groq_client.py        # Smart Model Router & JSON Guard
+│   ├── groq_logger.py        # Token Diagnostics & Console Logger
 │   ├── insights.py           # Growth Lens & Business Analytics Logic
 │   ├── main.py               # Core REST API Endpoints
 │   ├── scenario_simulator.py # AI Scenario Simulation Engine
-│   └── schemas.py            # Pydantic Request/Response Schemas
-├── frontend/                 # React + Vite Web Application
+│   ├── schemas.py            # Pydantic Request/Response Schemas
+│   └── storage.py            # Memory Storage Abstraction
+├── frontend/                 # React 19 + Vite Web Application
 │   ├── public/               # Static assets & sample datasets
 │   ├── src/                  # React components, screens, and services
 │   ├── package.json          # Frontend dependencies
 │   ├── tailwind.config.js    # TailwindCSS configuration
 │   └── vite.config.js        # Vite bundler configuration
+├── docs/                     # Documentation & UI Screenshots
 └── README.md                 # Project documentation
 ```
 
@@ -121,7 +123,7 @@ Growth GuruAI/growthguru-ai/
 
 Navigate to the backend directory:
 ```bash
-cd "Growth GuruAI/growthguru-ai/backend"
+cd backend
 ```
 
 Create and activate a virtual environment:
@@ -159,7 +161,7 @@ uvicorn main:app --reload --port 8000
 
 Open a new terminal and navigate to the frontend directory:
 ```bash
-cd "Growth GuruAI/growthguru-ai/frontend"
+cd frontend
 ```
 
 Install Node.js dependencies:
