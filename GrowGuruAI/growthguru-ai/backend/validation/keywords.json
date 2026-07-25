@@ -1,0 +1,104 @@
+{
+  "Clothing Store": {
+    "headers": ["size", "color", "fabric", "gender", "fit"],
+    "products": ["shirt", "t-shirt", "jeans", "trouser", "dress", "jacket", "hoodie", "sweater", "kurti", "top", "skirt"],
+    "categories": ["menswear", "womenswear", "kids", "winterwear", "summer", "ethnic", "casual", "formal"],
+    "brands": ["zara", "h&m", "levis", "nike", "adidas", "puma", "allen solly"],
+    "negative": ["laptop", "phone", "food", "burger", "coffee", "medicine", "furniture"],
+    "synonyms": {
+      "tshirt": "t-shirt",
+      "tee": "t-shirt",
+      "pant": "trouser",
+      "pants": "trouser"
+    }
+  },
+  "Electronics Store": {
+    "headers": ["model", "brand", "warranty", "processor", "ram", "storage", "battery"],
+    "products": ["mobile", "laptop", "tablet", "charger", "headphone", "earbud", "smartwatch", "tv", "camera", "speaker", "ssd", "mouse", "keyboard"],
+    "categories": ["smartphones", "computers", "accessories", "wearables", "audio", "appliances", "storage"],
+    "brands": ["apple", "samsung", "sony", "dell", "hp", "lenovo", "asus", "boAt", "jbl"],
+    "negative": ["shirt", "jeans", "food", "pizza", "coffee", "shoe"],
+    "synonyms": {
+      "phone": "mobile",
+      "smartphone": "mobile",
+      "cellphone": "mobile",
+      "earphones": "headphone",
+      "pc": "laptop",
+      "television": "tv"
+    }
+  },
+  "Bakery": {
+    "headers": ["weight", "flavor", "type", "ingredients", "eggless", "shelf_life"],
+    "products": ["cake", "bread", "pastry", "cookie", "muffin", "croissant", "brownie", "cupcake", "tart", "pie", "biscuit", "bun"],
+    "categories": ["cakes", "breads", "pastries", "cookies", "savory", "desserts", "custom cakes"],
+    "brands": ["monginis", "britannia", "theobroma", "local", "in-house"],
+    "negative": ["shirt", "laptop", "phone", "makeup", "shoe", "medicine", "electronics"],
+    "synonyms": {
+      "cupcakes": "cupcake",
+      "biscuits": "cookie",
+      "chocolates": "brownie"
+    }
+  },
+  "Restaurant": {
+    "headers": ["portion", "spice_level", "veg_nonveg", "cuisine", "calories"],
+    "products": ["pizza", "burger", "pasta", "biryani", "curry", "naan", "rice", "noodle", "sandwich", "salad", "soup", "steak", "fries"],
+    "categories": ["starters", "main course", "desserts", "beverages", "combos", "fast food", "indian", "chinese", "italian"],
+    "brands": ["dominos", "mcdonalds", "kfc", "subway", "in-house"],
+    "negative": ["shirt", "laptop", "phone", "makeup", "shoe", "medicine"],
+    "synonyms": {
+      "meal": "combo",
+      "drink": "beverage",
+      "coke": "beverage",
+      "water": "beverage"
+    }
+  },
+  "Cafe": {
+    "headers": ["size", "hot_cold", "milk_type", "sweetness"],
+    "products": ["coffee", "tea", "espresso", "latte", "cappuccino", "mocha", "frappe", "sandwich", "muffin", "croissant"],
+    "categories": ["hot beverages", "cold beverages", "snacks", "desserts", "beans"],
+    "brands": ["starbucks", "costa", "ccd", "local"],
+    "negative": ["shirt", "laptop", "phone", "medicine", "furniture"],
+    "synonyms": {
+      "brew": "coffee",
+      "chai": "tea",
+      "americano": "coffee"
+    }
+  },
+  "Salon": {
+    "headers": ["service", "duration", "stylist", "appointment"],
+    "products": ["haircut", "facial", "massage", "manicure", "pedicure", "hair color", "spa", "threading", "waxing", "shampoo"],
+    "categories": ["hair", "skin", "body", "nails", "bridal", "packages"],
+    "brands": ["loreal", "matrix", "olaplex", "lakme"],
+    "negative": ["laptop", "phone", "food", "burger", "pizza", "furniture"],
+    "synonyms": {
+      "cut": "haircut",
+      "coloring": "hair color",
+      "trim": "haircut"
+    }
+  },
+  "Gym": {
+    "headers": ["plan", "duration", "trainer", "shift"],
+    "products": ["membership", "personal training", "protein", "yoga", "zumba", "crossfit", "treadmill", "dumbbells", "creatine"],
+    "categories": ["subscriptions", "supplements", "classes", "equipment", "merchandise"],
+    "brands": ["optimum nutrition", "muscleblaze", "myprotein", "local"],
+    "negative": ["pizza", "burger", "laptop", "phone", "makeup"],
+    "synonyms": {
+      "pt": "personal training",
+      "whey": "protein",
+      "gym fee": "membership"
+    }
+  },
+  "Medical Store": {
+    "headers": ["prescription", "expiry", "batch", "mg", "dosage"],
+    "products": ["paracetamol", "antibiotic", "syrup", "ointment", "bandage", "thermometer", "mask", "sanitizer", "vitamin", "supplement"],
+    "categories": ["tablets", "syrups", "first aid", "personal care", "baby care", "nutrition", "surgicals"],
+    "brands": ["gsk", "sun pharma", "cipla", "mankind", "johnson & johnson"],
+    "negative": ["shirt", "jeans", "laptop", "phone", "pizza", "burger", "furniture"],
+    "synonyms": {
+      "pill": "tablet",
+      "medicine": "tablet",
+      "meds": "tablet",
+      "bandaid": "bandage"
+    }
+  }
+}

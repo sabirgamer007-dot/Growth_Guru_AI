@@ -1,0 +1,21 @@
+Product Name,Category,Units Sold,Revenue,Profit Margin (%),Current Stock,Customer Rating,Seasonality
+Sourdough Loaf,Bread,950,5700,65,15,4.9,All Year
+Baguette,Bread,1100,3300,70,10,4.7,All Year
+Chocolate Chip Cookie,Pastry,1500,3750,75,45,4.8,All Year
+Almond Croissant,Pastry,600,2700,60,5,4.9,All Year
+Plain Croissant,Pastry,850,2975,65,8,4.7,All Year
+Cinnamon Roll,Pastry,550,2200,68,12,4.6,All Year
+Rye Bread,Bread,200,1200,60,25,4.2,All Year
+Whole Wheat Loaf,Bread,400,2000,62,20,4.4,All Year
+Gluten-Free Brownie,Pastry,300,1200,50,40,4.1,All Year
+Focaccia Slab,Bread,450,2700,72,15,4.8,All Year
+Blueberry Danishes,Pastry,380,1520,60,18,4.5,All Year
+Brioche Buns (4-pack),Bread,250,1500,55,30,4.6,Summer
+Fruit Tart,Dessert,180,1260,45,10,4.7,Summer
+Cheesecake Slice,Dessert,220,1320,50,15,4.8,All Year
+Red Velvet Cupcake,Dessert,400,1600,65,25,4.5,All Year
+Macarons (6-pack),Dessert,150,1800,70,20,4.4,All Year
+Eclair,Dessert,210,945,55,12,4.5,All Year
+Pumpernickel Loaf,Bread,90,540,58,15,4.0,Winter
+Olive Bread,Bread,170,1190,65,10,4.3,All Year
+Banana Bread Slice,Pastry,500,1500,75,20,4.6,All Year

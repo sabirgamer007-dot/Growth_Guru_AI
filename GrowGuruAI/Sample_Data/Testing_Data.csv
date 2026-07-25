@@ -1,0 +1,102 @@
+Date,Invoice_ID,Product_ID,Product_Name,Category,Quantity_Sold,Unit_Price,Discount,Revenue,Customer_Type,Payment_Method,City
+2026-01-01,INV2001,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,UPI,Mumbai
+2026-01-01,INV2002,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,Returning,Credit Card,Delhi
+2026-01-02,INV2003,P003,Summer Dress,Dresses,1,1499.0,100.0,1399.0,New,Cash,Bangalore
+2026-01-02,INV2004,P004,Winter Hoodie,Outerwear,2,1999.0,0.0,3998.0,Returning,UPI,Pune
+2026-01-03,INV2005,P001,Basic T-Shirt,Topwear,4,499.0,0.0,1996.0,New,UPI,Mumbai
+2026-01-03,INV2006,P002,Blue Jeans,Bottomwear,3,1299.0,200.0,3697.0,Returning,Cash,Delhi
+2026-01-03,INV2007,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,New,Credit Card,Bangalore
+2026-01-04,INV2008,P001,Basic T-Shirt,Topwear,5,499.0,0.0,2495.0,Returning,UPI,Pune
+2026-01-04,INV2008,P001,Basic T-Shirt,Topwear,5,499.0,0.0,2495.0,Returning,UPI,Pune
+2026-01-04,INV2008,P001,Basic T-Shirt,Topwear,5,499.0,0.0,2495.0,Returning,UPI,Pune
+2026-01-05,INV2009,P003,Summer Dress,Dresses,2,1499.0,0.0,2998.0,New,Cash,Mumbai
+2026-01-05,INV2010,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,Credit Card,Delhi
+2026-01-06,INV2011,P001,Basic T-Shirt,Topwear,1,499.0,0.0,499.0,New,UPI,Bangalore
+2026-01-06,INV2012,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,Returning,Cash,Pune
+2026-14-99,INV2013,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,New,UPI,Mumbai
+2026-01-07,INV2014,P005,Wool Scarf,Accessories,2,599.0,50.0,1148.0,Returning,Credit Card,Delhi
+2026-01-08,INV2015,P001,Basic T-Shirt,Topwear,3,499.0,0.0,1497.0,New,Cash,Bangalore
+2026-01-08,INV2016,P004,Winter Hoodie,Outerwear,1,1999.0,100.0,1899.0,Returning,UPI,Pune
+2026-01-09,INV2017,P002,Blue Jeans,Bottomwear,2,1299.0,0.0,2598.0,New,UPI,Mumbai
+2026-01-09,INV2018,P003,Summer Dress,,1,1499.0,0.0,1499.0,Returning,Credit Card,Delhi
+2026-01-10,INV2019,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,Cash,Bangalore
+2026-01-10,INV2020,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,Returning,UPI,Pune
+2026-01-11,INV2021,P001,Basic T-Shirt,Topwear,6,499.0,0.0,2994.0,New,UPI,Mumbai
+2026-01-11,INV2022,P002,Blue Jeans,Bottomwear,4,1299.0,150.0,5046.0,Returning,Credit Card,Delhi
+2026-01-11,INV2023,P003,Summer Dress,Dresses,3,1499.0,0.0,4497.0,New,UPI,Bangalore
+2026-01-12,INV2024,P004,Winter Hoodie,Spaceships,2,1999.0,0.0,3998.0,Returning,Cash,Pune
+2026-01-12,INV2025,P001,Basic T-Shirt,Topwear,5,499.0,50.0,2445.0,New,UPI,Mumbai
+2026-01-13,INV2026,P005,Wool Scarf,Accessories,2,599.0,0.0,1198.0,Returning,Credit Card,Delhi
+2026-01-13,INV2027,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,New,UPI,Bangalore
+2026-01-14,INV2028,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,,Pune
+2026-01-14,INV2029,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,UPI,Mumbai
+2026-01-15,INV2030,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,Credit Card,Delhi
+2026-01-15,INV2031,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,New,Cash,Bangalore
+2026-01-16,INV2032,P002,Blue Jeans,Bottomwear,2,1299.0,50.0,2548.0,Returning,UPI,Pune
+2026-01-16,INV2033,P001,Basic T-Shirt,Topwear,3,499.0,0.0,1497.0,New,UPI,Mumbai
+2026-01-17,INV2034,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Credit Card,Delhi
+2026-01-17,INV2035,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,New,Cash,Bangalore
+2026-01-18,INV2036,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,Returning,UPI,Pune
+2026-01-18,INV2037,P001,Basic T-Shirt,Topwear,5,499.0,0.0,2495.0,New,UPI,Mumbai
+2026-01-19,INV2038,P002,Blue Jeans,Bottomwear,3,1299.0,100.0,3797.0,Returning,Credit Card,Delhi
+2026-01-19,INV2039,P003,Summer Dress,Dresses,2,1499.0,0.0,2998.0,New,UPI,Bangalore
+2026-01-20,INV2040,P004,Winter Hoodie,Outerwear,0,1999.0,0.0,0.0,Returning,Cash,Pune
+2026-01-20,INV2041,P001,Basic T-Shirt,Topwear,4,499.0,0.0,1996.0,New,UPI,Mumbai
+2026-01-21,INV2042,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,Returning,Credit Card,Delhi
+2026-01-21,INV2043,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,New,UPI,Bangalore
+2026-01-22,INV2044,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Cash,Pune
+2026-01-22,INV2045,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,UPI,Mumbai
+2026-01-23,INV2046,P004,Winter Hoodie,Outerwear,1,1999.0,3298.0,-1299.0,Returning,Credit Card,Delhi
+2026-01-23,INV2047,P001,Basic T-Shirt,Topwear,3,499.0,0.0,1497.0,New,Cash,Bangalore
+2026-01-24,INV2048,P002,Blue Jeans,Bottomwear,2,1299.0,50.0,2548.0,Returning,UPI,Pune
+2026-01-24,INV2049,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,New,UPI,Mumbai
+2026-01-25,INV2050,P005,Wool Scarf,Accessories,1,-499.0,0.0,-499.0,Returning,Credit Card,Delhi
+2026-01-25,INV2051,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,Cash,Bangalore
+2026-01-26,INV2052,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,UPI,Pune
+2026-01-26,INV2053,P001,Basic T-Shirt,Topwear,6,499.0,0.0,2994.0,New,UPI,Mumbai
+2026-01-27,INV2054,P002,Blue Jeans,Bottomwear,4,1299.0,200.0,4996.0,Returning,Credit Card,Delhi
+2026-01-27,INV2055,P003,Summer Dress,Dresses,3,1499.0,0.0,4497.0,New,UPI,Bangalore
+2026-01-28,INV2056,P004,Winter Hoodie,Outerwear,2,1999.0,0.0,3998.0,Returning,Cash,Pune
+2026-01-28,INV2057,P001,,Topwear,5,499.0,0.0,2495.0,New,UPI,Mumbai
+2026-01-29,INV2058,P005,Wool Scarf,Accessories,2,599.0,50.0,1148.0,Returning,Credit Card,Delhi
+2026-01-29,INV2059,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,New,UPI,Bangalore
+2026-01-30,INV2060,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Cash,Pune
+2026-01-30,INV2061,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,UPI,
+2026-01-31,INV2062,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,Credit Card,Delhi
+2026-01-31,INV2063,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,New,Cash,Bangalore
+2026-01-31,INV2064,P002,Blue Jeans,Bottomwear,2,1299.0,0.0,2598.0,Returning,UPI,Pune
+2026-02-01,INV2065,P009,Diamond Watch,Accessories,50,1999.0,0.0,99950.0,New,Credit Card,Mumbai
+2026-02-01,INV2066,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Credit Card,Delhi
+2026-02-02,INV2067,P010,Clearance Pin,Accessories,1,10.0,0.0,10.0,New,Cash,Bangalore
+2026-02-02,INV2068,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,Returning,UPI,Pune
+2026-02-03,INV2069,P001,Basic T-Shirt,Topwear,5,499.0,0.0,2495.0,New,UPI,Mumbai
+2026-02-03,INV2070,P002,Blue Jeans,Bottomwear,4,1299.0,150.0,5046.0,Returning,Credit Card,Delhi
+2026-02-04,INV2071,P003,Summer Dress,Dresses,2,1499.0,0.0,2998.0,New,UPI,Bangalore
+2026-02-04,INV2072,P004,Winter Hoodie,Outerwear,3,1999.0,100.0,5897.0,Returning,Cash,Pune
+2026-02-05,INV2073,P001,Basic T-Shirt,Topwear,4,499.0,0.0,1996.0,New,UPI,Mumbai
+2026-02-05,INV2074,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,Returning,Credit Card,Delhi
+2026-02-06,INV2075,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,New,UPI,Bangalore
+2026-02-06,INV2076,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Cash,Pune
+2026-02-07,INV2077,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,UPI,Mumbai
+2026-02-07,INV2078,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,Credit Card,Delhi
+2026-02-08,INV2079,P001,Basic T-Shirt,Topwear,3,499.0,0.0,1497.0,New,Cash,Bangalore
+2026-02-08,INV2080,P002,Blue Jeans,Bottomwear,2,1299.0,0.0,2598.0,Returning,UPI,Pune
+2026-02-09,INV2081,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,New,UPI,Mumbai
+2026-02-09,INV2082,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,Returning,Credit Card,Delhi
+2026-02-10,INV2083,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,Cash,Bangalore
+2026-02-10,INV2084,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,UPI,Pune
+2026-02-11,INV2085,P001,Basic T-Shirt,Topwear,7,499.0,0.0,3493.0,New,UPI,Mumbai
+2026-02-11,INV2086,P002,Blue Jeans,Bottomwear,5,1299.0,250.0,6245.0,Returning,Credit Card,Delhi
+2026-02-12,INV2087,P003,Summer Dress,Dresses,3,1499.0,0.0,4497.0,New,UPI,Bangalore
+2026-02-12,INV2088,P004,Winter Hoodie,Outerwear,2,1999.0,0.0,3998.0,Returning,Cash,Pune
+2026-02-13,INV2089,P001,Basic T-Shirt,Topwear,6,499.0,0.0,2994.0,New,UPI,Mumbai
+2026-02-13,INV2090,P005,Wool Scarf,Accessories,2,599.0,0.0,1198.0,Returning,Credit Card,Delhi
+2026-02-14,INV2091,P002,Blue Jeans,Bottomwear,1,1299.0,0.0,1299.0,New,UPI,Bangalore
+2026-02-14,INV2092,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Cash,Pune
+2026-02-15,INV2093,P001,Basic T-Shirt,Topwear,2,499.0,0.0,998.0,New,UPI,Mumbai
+2026-02-15,INV2094,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,Returning,Credit Card,Delhi
+2026-02-16,INV2095,P005,Wool Scarf,Accessories,1,599.0,0.0,599.0,New,Cash,Bangalore
+2026-02-16,INV2096,P002,Blue Jeans,Bottomwear,2,1299.0,0.0,2598.0,Returning,UPI,Pune
+2026-02-17,INV2097,P001,Basic T-Shirt,Topwear,3,499.0,0.0,1497.0,New,UPI,Mumbai
+2026-02-17,INV2098,P003,Summer Dress,Dresses,1,1499.0,0.0,1499.0,Returning,Credit Card,Delhi
+2026-02-18,INV2099,P004,Winter Hoodie,Outerwear,1,1999.0,0.0,1999.0,New,Cash,Bangalore
