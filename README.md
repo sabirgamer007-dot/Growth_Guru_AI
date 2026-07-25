@@ -113,7 +113,7 @@ Growth GuruAI/growthguru-ai/
 
 - **Python**: 3.10 or higher
 - **Node.js**: 18.0 or higher
-- **Groq API Key**: Available at [console.groq.com](https://console.groq.com)
+- **Groq API Key**: Available at (https://console.groq.com)
 
 ---
 
@@ -199,4 +199,4 @@ npm run dev
 
 ## 🤝 Team
 
-Developed with ❤️ for the Hackathon by **Team PixelForge**.
+Developed with ❤️ for by **Team PixelForge**.
