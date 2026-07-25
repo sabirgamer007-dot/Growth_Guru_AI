@@ -103,7 +103,7 @@ Small and medium-sized businesses often struggle to convert raw sales records in
 │   ├── package.json          # Frontend dependencies
 │   ├── tailwind.config.js    # TailwindCSS configuration
 │   └── vite.config.js        # Vite bundler configuration
-├── docs/                     # Documentation & UI Screenshots
+├── docs/images                    # Documentation & UI Screenshots
 └── README.md                 # Project documentation
 ```
 
