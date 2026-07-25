@@ -1,82 +1,107 @@
 # GrowthGuru AI
 
-*AI-powered Social Media Marketing Assistant for small businesses.*
+> **Empowering small businesses with AI-driven marketing intelligence and automated sales analytics.**
 
 ---
 
 ## 🚀 Project Overview
 
-Small businesses often struggle with creating effective, data-driven social media marketing campaigns due to a lack of dedicated resources and expertise. Without a specialized analytics team, translating raw sales data into actionable business strategies can feel overwhelming.
+Small and medium-sized businesses often struggle to convert raw sales records into high-converting marketing campaigns due to limited analytics resources and domain expertise. Without a dedicated data team, identifying growth opportunities, detecting inventory risks, and planning targeted social media campaigns can be complex and time-consuming.
 
-**GrowthGuru AI** solves this by democratizing access to expert-level marketing intelligence. By leveraging advanced AI models (via Groq), it automates data analysis, detects hidden business insights, and generates tailored growth plans—empowering businesses to make confident, data-driven decisions seamlessly.
+**GrowthGuru AI** bridges this gap by acting as an autonomous, data-driven Chief Marketing Officer. Powered by Groq LLMs and a high-performance Python analytics backend, it ingests raw transaction data, validates integrity, extracts actionable business metrics, simulates strategic outcomes, and generates ready-to-publish social media campaigns—enabling business owners to execute confident, data-backed decisions.
 
 ---
 
 ## ⭐ Key Features
 
-| Feature | Description |
-|---|---|
-| 🚀 **AI Growth Engine** | Generates data-driven business growth strategies from uploaded sales data, prioritizing recommendations based on real business metrics. |
-| 🧠 **AI Hybrid CSV Validation** | Combines rule-based and AI-powered validation to detect data quality issues and verify smart alignment with business goals. |
-| 📊 **Growth Lens** | Analyzes sales performance to identify trends, pinpoint revenue opportunities, detect inventory risks, and suggest cross-selling strategies. |
-| 🎯 **AI Scenario Simulator** | Simulates possible business outcomes and estimates the potential impact of implementing the recommended AI strategies. |
-| 📱 **AI Social Media Generator** | Creates product promotion captions, platform-ready marketing copy, and relevant hashtags for engagement-focused campaigns. |
-| 🔄 **Intelligent Model Router** | Automatically switches between primary and fallback Groq models upon quota/rate-limit events, ensuring high availability. |
-| 🛡️ **Production-Grade Engine** | Features a token-efficient AI pipeline, automatic JSON validation/repair, and a secure backend architecture. |
+### 🤖 Core AI Modules
+
+- 🧠 **Growth Engine** — AI-powered business growth recommendations.
+- 📊 **Growth Lens** — Business insights, opportunity analysis & scenario simulation.
+- ✅ **Hybrid Validation Engine** — AI + rule-based CSV validation and alignment checks.
+- 📱 **Social Studio** — AI-generated product captions and hashtags for product promotion.
+
+### 📈 Business Dashboard
+
+- 📊 **Revenue Analytics** — Comprehensive tracking of revenue trends and key performance indicators.
+- 🛍️ **Product Performance** — Identification of top sellers, product sales velocity, and cross-selling targets.
+- 📦 **Inventory Insights** — Proactive risk detection for inventory management and stock health.
+- 📈 **Sales Overview** — Clear visualization of business volume and sales metrics over time.
+
+### ⚙️ AI Infrastructure
+
+- 🔄 **Smart Model Router** — Automatic Groq model routing and intelligent fallback.
+- 🛡️ **JSON Guard** — Structured JSON validation and response integrity.
+- 🔍 **AI Forensics** — Token diagnostics, request tracing and execution analytics.
+- 📡 **Token Monitor** — AI token usage monitoring.
+- ⚡ **Rate Limit Shield** — Intelligent HTTP 429 handling and recovery.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend:** React 19, Vite, TailwindCSS, Recharts, Lucide React
-- **Backend:** Python, FastAPI, Pandas, Uvicorn
-- **AI Models:** Groq SDK (LLaMA 3.3 70b versatile / llama 3.1 8b model fallback support)
-- **Architecture:** Client-Server API Workflow
+| Layer | Technology |
+|---|---|
+| **Frontend** | React 19, Vite, TailwindCSS, Recharts, Lucide React |
+| **Backend** | Python 3.10+, FastAPI, Pandas, Uvicorn, Pydantic |
+| **AI Inference** | Groq SDK (LLaMA 3.3 70B Versatile, LLaMA 3.1 8B Fallback) |
+| **Architecture** | Client-Server REST API, Token-Efficient Pipeline, Hybrid Validation |
 
 ---
 
 ## ⚙️ System Architecture
 
-The complete end-to-end data processing workflow:
-
-1. **CSV Upload**: Securely upload raw sales data.
-2. **↓ Validation Engine**: Hybrid verification guarantees data integrity.
-3. **↓ Business Summary**: Pandas extracts KPIs and core business metrics.
-4. **↓ Growth Engine**: AI analyzes metrics to formulate an initial growth strategy.
-5. **↓ Growth Lens**: Actionable insights (inventory alerts, cross-sell/up-sell targets) are highlighted.
-6. **↓ Scenario Simulation**: Forecasts the revenue impact of adopting the generated strategy.
-7. **↓ Social Media Generator**: Outputs platform-ready captions and hashtags based on the winning products.
-8. **↓ Final Dashboard**: Renders insights interactively in the React frontend.
+```text
+[ Raw CSV Upload ]
+       │
+       ▼
+┌─────────────────────────────────────────┐
+│ 1. Hybrid CSV & Business Validation     │ (Schema & Rule-based Verification)
+└────────────────────┬────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────┐
+│ 2. Pandas Analytics & Summary Engine    │ (KPI Extraction & Data Normalization)
+└────────────────────┬────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────┐
+│ 3. Smart Model Router & Groq LLM        │ (LLaMA 3.3 70B / Fallback Execution)
+└────────────────────┬────────────────────┘
+                     │
+       ┌─────────────┼─────────────┐
+       ▼             ▼             ▼
+┌──────────────┐ ┌──────────┐ ┌────────────────┐
+│ Growth Engine│ │GrowthLens│ │ Social Studio  │
+└──────┬───────┘ └────┬─────┘ └───────┬────────┘
+       │              │               │
+       └──────────────┼───────────────┘
+                      ▼
+┌─────────────────────────────────────────┐
+│ 4. React 19 Interactive Dashboard       │ (Visualizations, Scenarios, Captions)
+└─────────────────────────────────────────┘
+```
 
 ---
 
-## 🧠 AI Workflow
-
-When business data is uploaded, it is first cleaned and normalized natively. The Pandas engine computes critical KPIs like Total Revenue, Best Sellers, and Inventory Risks. This robust context is securely formatted and passed to the **Groq API** with an optimized system prompt. 
-
-The AI model evaluates the data, generates actionable insights via the Growth Engine, and drafts engaging social media captions. Our **Intelligent Model Router** guarantees zero downtime by automatically falling back to secondary models if API rate limits are hit, while a built-in JSON repair agent instantly fixes any malformed model responses.
-
----
-
-## 📂 Folder Structure
+## 📂 Project Structure
 
 ```text
 Growth GuruAI/growthguru-ai/
 ├── backend/                  # FastAPI Backend Service
-│   ├── validation/           # Hybrid CSV and Business Validation Engine
+│   ├── validation/           # Hybrid CSV & Schema Validation Engine
 │   ├── config.py             # Global configurations & LLM settings
-│   ├── groq_client.py        # Intelligent Model Router & JSON Repair
-│   ├── insights.py           # Growth Lens & Data Analytics logic
-│   ├── main.py               # Core API routes
-│   ├── scenario_simulator.py # AI Scenario Simulation engine
-│   └── schemas.py            # Pydantic request/response models
-├── frontend/                 # React + Vite Frontend Application
-│   ├── public/               # Static assets
-│   ├── src/                  # React components, pages, and hooks
+│   ├── groq_client.py        # Smart Model Router, JSON Guard & Diagnostics
+│   ├── insights.py           # Growth Lens & Business Analytics Logic
+│   ├── main.py               # Core REST API Endpoints
+│   ├── scenario_simulator.py # AI Scenario Simulation Engine
+│   └── schemas.py            # Pydantic Request/Response Schemas
+├── frontend/                 # React + Vite Web Application
+│   ├── public/               # Static assets & sample datasets
+│   ├── src/                  # React components, screens, and services
 │   ├── package.json          # Frontend dependencies
-│   ├── tailwind.config.js    # TailwindCSS styling configurations
-│   └── vite.config.js        # Vite bundler configurations
-├── .gitignore                # Secure ignore rules
+│   ├── tailwind.config.js    # TailwindCSS configuration
+│   └── vite.config.js        # Vite bundler configuration
 └── README.md                 # Project documentation
 ```
 
@@ -84,83 +109,94 @@ Growth GuruAI/growthguru-ai/
 
 ## 💻 Installation & Setup
 
-### Backend Setup
-1. Navigate to the backend directory:
-   ```bash
-   cd "Growth GuruAI/growthguru-ai/backend"
-   ```
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   # Windows:
-   venv\Scripts\activate
-   # macOS/Linux:
-   source venv/bin/activate
-   ```
-3. Install Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Prerequisites
 
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd "Growth GuruAI/growthguru-ai/frontend"
-   ```
-2. Install Node.js dependencies:
-   ```bash
-   npm install
-   ```
+- **Python**: 3.10 or higher
+- **Node.js**: 18.0 or higher
+- **Groq API Key**: Available at [console.groq.com](https://console.groq.com)
 
-### Environment Variables
-**Backend (`Growth GuruAI/growthguru-ai/backend/.env`)**
-Create the `.env` file from the example:
+---
+
+### 1. Backend Setup
+
+Navigate to the backend directory:
+```bash
+cd "Growth GuruAI/growthguru-ai/backend"
+```
+
+Create and activate a virtual environment:
+```bash
+# Windows PowerShell:
+python -m venv venv
+.\venv\Scripts\activate
+
+# macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Install Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Configure environment variables:
+Create a `.env` file in the `backend/` directory:
 ```env
 FRONTEND_URL=http://localhost:5173
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
-**Frontend (`Growth GuruAI/growthguru-ai/frontend/.env`)**
-Create the `.env` file from the example:
+Start the FastAPI development server:
+```bash
+uvicorn main:app --reload --port 8000
+```
+*Backend API will be running at `http://localhost:8000` (Swagger docs available at `/docs`).*
+
+---
+
+### 2. Frontend Setup
+
+Open a new terminal and navigate to the frontend directory:
+```bash
+cd "Growth GuruAI/growthguru-ai/frontend"
+```
+
+Install Node.js dependencies:
+```bash
+npm install
+```
+
+Configure environment variables:
+Create a `.env` file in the `frontend/` directory:
 ```env
 VITE_API_BASE_URL=http://localhost:8000
 ```
 
-### Run Commands
-**Start the Backend Server:**
+Start the Vite development server:
 ```bash
-cd "Growth GuruAI/growthguru-ai/backend"
-uvicorn main:app --reload --port 8000
-```
-
-**Start the Frontend App:**
-```bash
-cd "Growth GuruAI/growthguru-ai/frontend"
 npm run dev
 ```
-*Access the application interface at `http://localhost:5173`.*
+*Frontend application will be accessible at `http://localhost:5173`.*
 
 ---
 
-## 💡 Why GrowthGuru AI?
+## 📸 Screenshots
 
-Unlike simple analytics dashboards that only visualize past performance, **GrowthGuru AI** acts as a proactive Chief Marketing Officer (CMO). 
+| Dashboard Overview | Growth Recommendations |
+|---|---|
+| ![Dashboard](/path/to/placeholder_dashboard.png) | ![Growth Plan](/path/to/placeholder_growth_plan.png) |
 
-- **AI-Driven Decision Support:** It doesn't just show you numbers; it tells you exactly *what to do* next.
-- **Actionable Recommendations:** Delivers prioritized, confidence-scored recommendations tailored to your unique sales data.
-- **Business Intelligence Meets Marketing:** Bridges the gap between raw data and marketing execution by instantly generating ready-to-post social media content.
+| Growth Lens Analytics | Scenario Simulator |
+|---|---|
+| ![Growth Lens](/path/to/placeholder_growth_lens.png) | ![Scenario Simulator](/path/to/placeholder_simulator.png) |
 
----
-
-## 🛣️ Future Roadmap
-
-- **CRM & POS Integrations:** Direct synchronization with platforms like Shopify, WooCommerce, and Salesforce.
-- **Predictive Analytics:** Advanced time-series forecasting for seasonal inventory trends.
-- **Live Sales Integration:** Real-time dashboard updates via secure WebSockets.
-- **Multi-Language Support:** Localized insights for global small businesses.
+| CSV Data Validation | Social Studio Generator |
+|---|---|
+| ![Validation](/path/to/placeholder_validation.png) | ![Social Media Generator](/path/to/placeholder_social_media.png) |
 
 ---
 
-## 🤝 Contributors
+## 🤝 Team
 
-- **Team PixelForge**
+Developed with ❤️ for the Hackathon by **Team PixelForge**.
