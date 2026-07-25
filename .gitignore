@@ -35,3 +35,9 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# Documentation & Sample Data
+Docs/
+docs/
+Sample_Data/
+sample_data/
