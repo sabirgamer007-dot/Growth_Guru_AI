@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', 'Plus Jakarta Sans', 'Manrope', system-ui, sans-serif;
+    background-color: #0F172A;
+    color: #94A3B8;
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #F8FAFC;
+  }
+
+  /* Scrollbar styling for the dark theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0F172A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+@layer components {
+  /* Primary Button — per UI/UX spec §6 */
+  .btn-primary {
+    @apply bg-primary text-bg font-medium px-6 py-2.5 rounded-button
+           hover:bg-primary-hover transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-bg
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Secondary Button — per UI/UX spec §6 */
+  .btn-secondary {
+    @apply bg-transparent border border-text-muted text-text-main font-medium px-6 py-2.5 rounded-button
+           hover:border-text-main transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-bg
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Card — per UI/UX spec §6 */
+  .card {
+    @apply bg-surface border border-border rounded-card;
+  }
+
+  /* Form inputs — per UI/UX spec §6 */
+  .input {
+    @apply w-full bg-bg border border-border rounded-button px-4 py-2.5
+           text-text-main placeholder-text-muted
+           focus:outline-none focus:border-primary transition-colors duration-200;
+  }
+
+  .label {
+    @apply block text-small text-text-muted uppercase tracking-wider mb-xs;
+  }
+}
