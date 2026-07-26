@@ -280,18 +280,6 @@ npm run dev
 |---|---|
 | ![CSV Validation](docs/images/csv_validation.png) | ![GrowthLens Impact Simulator](docs/images/growth_lens.png) |
 
----
-
-## 🔮 Future Roadmap
-
-The following features are planned for future development:
-- Authentication & User Management
-- CRM & ERP Integrations (e.g., Tally)
-- Predictive Demand Forecasting
-- Long-term Trend Analysis
-- WhatsApp Marketing Support
-
----
 
 ## 🤝 Team
 
