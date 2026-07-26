@@ -76,7 +76,9 @@ def execute_groq_json_call(
     user_prompt: str,
     max_tokens: int = GROQ_MAX_COMPLETION_TOKENS,
     temperature: float = GROQ_TEMPERATURE,
-    feature_name: str = "General"
+    feature_name: str = "General",
+    primary_model: str | None = None,
+    fallback_model: str | None = None
 ) -> Dict[str, Any]:
     """
     Central unified function for executing Groq calls that expect JSON output.
@@ -90,8 +92,8 @@ def execute_groq_json_call(
     req_id = str(uuid.uuid4())[:8]
     prompt_len = len(user_prompt)
     
-    primary_model = GROQ_MODEL
-    fallback_model = FALLBACK_MODEL
+    primary_model = primary_model or GROQ_MODEL
+    fallback_model = fallback_model or FALLBACK_MODEL
     current_model = primary_model
     
     timeout_retries_remaining = 1

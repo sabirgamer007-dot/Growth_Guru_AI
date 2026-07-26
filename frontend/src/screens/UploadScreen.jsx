@@ -10,7 +10,7 @@
 import { useState, useRef, useCallback } from 'react';
 import { Upload, FileText, AlertCircle, CheckCircle, ArrowRight } from 'lucide-react';
 import { parseCSV, calculateKPIs, validateCSVHeaders } from '../utils/csvParser';
-import { uploadCSV, validateBusinessAlignment } from '../services/api';
+import { uploadCSV, validateBusinessAlignment, analyzeData } from '../services/api';
 import MismatchModal from '../components/MismatchModal';
 
 export default function UploadScreen({ businessProfile, setBusinessProfile, onDataReady, onNavigate }) {
@@ -70,7 +70,21 @@ export default function UploadScreen({ businessProfile, setBusinessProfile, onDa
         throw new Error(valResult.error || "Failed to validate dataset.");
       }
 
-      const kpis = calculateKPIs(rows);
+      const analyzeResult = await analyzeData(fileId);
+      if (!analyzeResult.success) {
+        throw new Error(analyzeResult.error || "Failed to analyze data on the server.");
+      }
+      
+      const serverKpis = analyzeResult.data;
+      const kpis = {
+        totalSales: serverKpis.total_sales_count,
+        totalRevenue: serverKpis.total_revenue,
+        bestSeller: serverKpis.best_selling_product,
+        worstSeller: serverKpis.lowest_selling_product,
+        productData: serverKpis.product_data,
+        insights: serverKpis.insights
+      };
+
       const readyData = { rawRows: rows, kpis, headers, fileId };
 
       if (!valResult.data.match) {

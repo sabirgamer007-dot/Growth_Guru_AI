@@ -44,7 +44,9 @@ Representative Sample Rows:
         user_prompt=user_prompt,
         max_tokens=250,
         temperature=0.1,
-        feature_name="CSV Validator"
+        feature_name="CSV Validator",
+        primary_model="llama-3.1-8b-instant",
+        fallback_model="llama-3.3-70b-versatile"
     )
 
     if result.get("success"):

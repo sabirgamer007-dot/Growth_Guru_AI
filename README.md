@@ -6,34 +6,70 @@
 
 ## 🚀 Project Overview
 
-Small and medium-sized businesses often struggle to convert raw sales records into high-converting marketing campaigns due to limited analytics resources and domain expertise. Without a dedicated data team, identifying growth opportunities, detecting inventory risks, and planning targeted social media campaigns can be complex and time-consuming.
+Small and medium-sized businesses often struggle to convert raw sales records into high-converting marketing campaigns due to limited analytics resources and domain expertise. Without a dedicated data team, identifying growth opportunities, detecting inventory risks, and planning targeted social campaigns can be complex and time-consuming.
 
-**GrowthGuru AI** bridges this gap by acting as an autonomous, data-driven Chief Marketing Officer. Powered by Groq LLMs and a high-performance Python analytics backend, it ingests raw transaction data, validates integrity, extracts actionable business metrics, simulates strategic outcomes, and generates ready-to-publish social media campaigns—enabling business owners to execute confident, data-backed decisions.
+**GrowthGuru AI** acts as an AI-powered business growth assistant, combining data-driven business analytics with LLM-powered strategic recommendations. It executes a rigorous analytical pipeline—CSV upload, hybrid validation, data integrity checking, KPI computation, and insights generation—before applying AI reasoning. Powered by a FastAPI analytics backend and Groq LLMs, it ingests raw transaction data, extracts actionable business metrics, generates an AI Growth Plan, simulates strategic outcomes with GrowthLens, and creates ready-to-publish social media campaigns. This architecture helps reduce AI hallucinations by ensuring the language model consumes validated business metrics instead of recalculating them.
+
+---
+
+## 🚀 Highlights
+
+- AI-powered business growth assistant for SMEs
+- Hybrid CSV validation and Business Integrity Checker
+- Python-based KPI computation with SSOT architecture
+- AI-generated growth strategies using validated business metrics
+- Business impact simulation with GrowthLens
+- AI-generated social media captions and hashtags
+
+---
+
+## 🤔 Why GrowthGuru AI?
+
+- **Reliable Business Metrics**: Core business KPIs are computed in Python before AI analysis.
+- **Prevents AI from recalculating business metrics**: The AI never recalculates revenue, profit, margins, rankings, or inventory metrics.
+- **Strategic Focus**: AI focuses exclusively on strategic reasoning based on hard data.
+- **Single Source of Truth**: The Dashboard, GrowthEngine, and GrowthLens all use the very same backend metrics.
+- **Explainable & Consistent**: Outputs are explainable and highly consistent across every component of the application.
 
 ---
 
 ## ⭐ Key Features
 
+### 🧩 Business Intelligence Engine
+
+- **KPI Engine** — Calculates revenue, profit, margins, contribution, inventory coverage, and product performance metrics in Python.
+- **Business Integrity Checker** — Detects common business data integrity issues such as:
+  - Negative revenue
+  - Invalid customer ratings
+  - Negative inventory
+  - Revenue with zero sales
+  - Missing required values
+  - Inconsistent business records
+- **Executive Insights Engine** — Generates prioritized dashboard insights using backend-calculated metrics.
+- **Single Source of Truth (SSOT)** — Dashboard, GrowthEngine, and GrowthLens consume the same backend metrics to ensure consistency.
+
 ### 🤖 Core AI Modules
 
-- 🧠 **Growth Engine** — AI-powered business growth recommendations.
-- 📊 **Growth Lens** — Business insights, opportunity analysis & scenario simulation.
-- ✅ **Hybrid Validation Engine** — AI + rule-based CSV validation and alignment checks.
+- 🧠 **GrowthEngine** — AI-powered business growth recommendations generated directly from validated backend KPIs.
+- 📊 **GrowthLens** — Business impact simulation, opportunity analysis, confidence scoring, and implementation prioritization based on backend KPIs and generated strategy.
 - 📱 **Social Studio** — AI-generated product captions and hashtags for product promotion.
 
 ### 📈 Business Dashboard
 
-- 📊 **Revenue Analytics** — Comprehensive tracking of revenue metrics and key performance indicators.
-- 🛍️ **Product Performance** — Identification of top sellers, lowest sellers, and cross-selling targets.
-- 📦 **Inventory Insights** — Proactive risk detection for inventory management and stock health.
-- 📈 **Sales Overview** — Clear visualization of business volume and sales metrics.
+- 📊 **KPI Analytics**
+- 🛍️ **Product Performance Analysis**
+- 🚨 **Business Integrity Alerts**
+- 💡 **Executive Business Insights**
+- 📦 **Inventory Risk Monitoring**
+- 📈 **AI Growth Plan Visualization**
 
 ### ⚙️ AI Infrastructure
 
+- 🧩 **Business Integrity Middleware** — Backend layer that validates business logic before KPI computation and AI reasoning.
 - 🔄 **Smart Model Router** — Automatic Groq model routing and intelligent fallback (LLaMA 3.3 70B → LLaMA 3.1 8B).
 - 🛡️ **JSON Guard** — Structured JSON validation and automatic repair logic.
 - 🔍 **AI Diagnostics Logger** — Server-side token estimation & request diagnostics logging.
-- ⚡ **Rate Limit Shield** — Intelligent HTTP 429 handling and error recovery.
+- ⚡ **Rate Limit Recovery** — Intelligent HTTP 429 handling and error recovery.
 
 ---
 
@@ -41,10 +77,12 @@ Small and medium-sized businesses often struggle to convert raw sales records in
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | React 19, Vite, TailwindCSS, Recharts, Lucide React |
-| **Backend** | Python 3.10+, FastAPI, Pandas, Uvicorn, Pydantic |
-| **AI Inference** | Groq SDK (LLaMA 3.3 70B Versatile, LLaMA 3.1 8B Fallback) |
-| **Architecture** | Client-Server REST API, Token-Efficient Pipeline, Hybrid Validation |
+| **Frontend** | React 19, Vite |
+| **UI** | TailwindCSS, Lucide React |
+| **Visualization** | Recharts |
+| **Backend** | FastAPI, Pandas, Pydantic |
+| **AI** | Groq SDK |
+| **Architecture** | SSOT, Hybrid Validation Pipeline |
 
 ---
 
@@ -55,29 +93,44 @@ Small and medium-sized businesses often struggle to convert raw sales records in
        │
        ▼
 ┌─────────────────────────────────────────┐
-│ 1. Hybrid CSV & Business Validation     │ (Schema & Rule-based Verification)
+│ 1. Hybrid CSV Validation                │
 └────────────────────┬────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────┐
-│ 2. Pandas Analytics & Summary Engine    │ (KPI Extraction & Data Normalization)
+│ 2. Business Integrity Checker           │
 └────────────────────┬────────────────────┘
                      │
                      ▼
 ┌─────────────────────────────────────────┐
-│ 3. Smart Model Router & Groq LLM        │ (LLaMA 3.3 70B / Fallback Execution)
+│ 3. KPI Engine                           │
+└────────────────────┬────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────┐
+│ 4. Executive Insights Generator         │
+└────────────────────┬────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────┐
+│ 5. AI Context Builder                   │
+└────────────────────┬────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────┐
+│ 6. Smart Model Router                   │
 └────────────────────┬────────────────────┘
                      │
        ┌─────────────┼─────────────┐
        ▼             ▼             ▼
-┌──────────────┐ ┌──────────┐ ┌────────────────┐
-│ Growth Engine│ │GrowthLens│ │ Social Studio  │
-└──────┬───────┘ └────┬─────┘ └───────┬────────┘
+┌──────────────┐ ┌──────────┐ ┌───────────────┐
+│ GrowthEngine │ │GrowthLens│ │ Social Studio │
+└──────┬───────┘ └────┬─────┘ └───────┬───────┘
        │              │               │
        └──────────────┼───────────────┘
                       ▼
 ┌─────────────────────────────────────────┐
-│ 4. React 19 Interactive Dashboard       │ (Visualizations, Scenarios, Captions)
+│ 7. React Dashboard                      │
 └─────────────────────────────────────────┘
 ```
 
@@ -89,10 +142,12 @@ Small and medium-sized businesses often struggle to convert raw sales records in
 .
 ├── backend/                  # FastAPI Backend Service
 │   ├── validation/           # Hybrid CSV & Schema Validation Engine
+│   │   ├── column_mapper.py  # Data Alignment & Mapping
+│   │   └── integrity_checker.py # Business Integrity Checker
 │   ├── config.py             # Global configurations & LLM settings
 │   ├── groq_client.py        # Smart Model Router & JSON Guard
 │   ├── groq_logger.py        # Token Diagnostics & Console Logger
-│   ├── insights.py           # Growth Lens & Business Analytics Logic
+│   ├── insights.py           # Executive Insights Generator
 │   ├── main.py               # Core REST API Endpoints
 │   ├── scenario_simulator.py # AI Scenario Simulation Engine
 │   ├── schemas.py            # Pydantic Request/Response Schemas
@@ -106,6 +161,38 @@ Small and medium-sized businesses often struggle to convert raw sales records in
 ├── docs/                     # Documentation & UI Screenshots
 └── README.md                 # Project documentation
 ```
+
+---
+
+## 🎯 Workflow
+
+1. Upload Business CSV
+2. Validate Dataset Structure
+3. Detect Business Integrity Issues
+4. Compute KPIs
+5. Generate Executive Insights
+6. Generate AI Growth Strategy
+7. Simulate Business Impact with GrowthLens
+8. Create Social Media Content with Social Studio
+
+---
+
+## 🔌 API Endpoints
+
+- **POST /upload**  
+  Upload and validate the raw business CSV.
+
+- **POST /validate-alignment**  
+  Verify data structure and business type alignment.
+
+- **POST /analyze**  
+  Aggregate uploaded CSV data and extract KPIs.
+  
+- **POST /generate-growth-plan**  
+  Generate AI-powered business growth strategy.
+  
+- **POST /simulate-impact**  
+  Run GrowthLens business impact simulation.
 
 ---
 
@@ -185,13 +272,24 @@ npm run dev
 
 ## 📸 Screenshots
 
-| Dashboard Analytics | GrowthEngine™ Strategy |
+| Dashboard Analytics | GrowthEngine Strategy |
 |---|---|
 | ![Dashboard Analytics](docs/images/dashboard_analytics.png) | ![GrowthEngine Strategy](docs/images/growth_engine.png) |
 
-| Hybrid CSV Validation | GrowthLens™ Impact Simulator |
+| Hybrid CSV Validation | GrowthLens Impact Simulator |
 |---|---|
 | ![CSV Validation](docs/images/csv_validation.png) | ![GrowthLens Impact Simulator](docs/images/growth_lens.png) |
+
+---
+
+## 🔮 Future Roadmap
+
+The following features are planned for future development:
+- Authentication & User Management
+- CRM & ERP Integrations (e.g., Tally)
+- Predictive Demand Forecasting
+- Long-term Trend Analysis
+- WhatsApp Marketing Support
 
 ---
 
